@@ -2,7 +2,7 @@
 #'
 #' @param n A sample size
 #' @param iter number of iterations description
-#' @return a histogram and vector of sums
+#' @return a histogram
 #' @export
 #'
 #' @examples
@@ -12,5 +12,4 @@ GabesMyclt<-function(n,iter){
   data=matrix(y,nr=n,nc=iter,byrow=TRUE) #B
   sm=apply(data,2,sum) #C
   hist(sm)
-  sm
 }
